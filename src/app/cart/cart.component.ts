@@ -18,7 +18,7 @@ export class CartComponent implements OnInit {
     if(this.authService.isAuthenticated()) {
       this.cartService.delete(index);
     } else {
-      alert("You first need to sign in or sign up to remove data")
+      alert("You need to log in first to be able to delete the data")
     }
   }
 

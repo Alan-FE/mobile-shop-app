@@ -46,7 +46,7 @@ export class MobilePhonesComponent implements OnInit {
       this.dataStorageService.saveData(this.array);
       form.reset();
     } else {
-      alert("You need to sign up or sign in first!");
+      alert("You need to log in first!");
     }
   }
 
@@ -55,7 +55,7 @@ export class MobilePhonesComponent implements OnInit {
       this.array.splice(index, 1);
       this.dataStorageService.saveData(this.array);
     } else {
-      alert("You need to sign up or sign in first")
+      alert("You need to log in first!")
     }
   }
 
@@ -64,7 +64,7 @@ export class MobilePhonesComponent implements OnInit {
       this.cartService.cart.push(this.array[index]);
       this.cartService.add();
     } else {
-      alert("You need to sign up or sign in first!");
+      alert("You need to log in first!");
     }
   }
 }
