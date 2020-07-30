@@ -1,0 +1,34 @@
+@import '../../colors';
+
+#nav {
+    background-color: $primary-color;
+    width: 80%;
+    height: 70px;
+    margin: 0 auto;
+    padding: 7px;
+    border: 1px solid #003249;
+    border-radius: 37px;
+    text-align: center;
+
+    ul {
+        padding: 0px;
+        margin: 0px auto;
+
+        li {
+            display: inline-block;
+            margin: 0 auto;
+            padding: 0px 10px;
+            line-height: 70px;
+            }
+    }
+
+    a {
+        text-decoration: none;
+        padding: 4px;
+        color: white;
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+    
+}

@@ -1,0 +1,12 @@
+<div id='nav'>
+    <ul>
+        <li><a routerLink='/mobile-phones'>Mobile phones</a></li>
+        <li><a routerLink='/mobile-specifications'>Mobile specifications</a></li>
+        <li><a routerLink='/cart'>Cart</a></li>
+        <li><a *ngIf="authService.isAuthenticated()" (click) = "onLogout()" style="cursor: pointer;">Logout</a></li>
+        <ng-template [ngIf]="!authService.isAuthenticated()">
+            <li><a routerLink='/sign-in'>Sign in</a></li>
+            <li><a routerLink='/sign-up'>Sign up</a></li>
+        </ng-template>
+    </ul>
+</div>

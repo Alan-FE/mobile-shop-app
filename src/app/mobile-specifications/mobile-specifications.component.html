@@ -1,0 +1,24 @@
+<div id="specs"> 
+    <table *ngFor = "let data of fullSpecs">
+        <tr>
+            <td colspan="2"><a [href]="data.imgPath" target="_blank">
+                <img [src]="data.imgPath" alt="Phone photo" class="small-pic"></a></td>
+        </tr>
+        <tr>
+            <td>Name</td><td class="data">{{ data.name }}</td>
+        </tr>
+        <tr>
+            <td>Cameras</td><td class="data">{{ data.camera }}</td>
+        </tr>
+        <tr>
+            <td>Color</td><td class="data">{{ data.color }}</td>
+        </tr>
+        <tr>
+            <td>Memory</td><td class="data">{{ data.memory }}</td>
+        </tr>
+        <tr>
+            <td>Price</td><td class="data">{{ data.price }}</td>
+        </tr>
+    </table>
+    
+</div>

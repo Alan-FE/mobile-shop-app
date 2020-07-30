@@ -1,0 +1,28 @@
+@import '../../colors';
+
+#specs {
+    width: 990px;
+    margin: 15px auto;
+    table {
+        display: inline-block;
+        border-collapse: collapse;
+        background-color: $primary-color;
+        color: white;
+        width: 237px;
+        height: 360px;
+        margin: 0px 5px;
+        tr td {
+            border: 1px solid $primary-color-dark;
+            padding: 6px;
+        }
+        .small-pic {
+            display: block;
+            height: 70px;
+            margin: 0 auto;
+        }
+        .data {
+            width: 100%;
+        }
+    }
+}
+

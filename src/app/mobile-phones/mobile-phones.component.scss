@@ -1,0 +1,96 @@
+@import '../../colors';
+#container {
+    width: 990px;
+    margin: 0 auto;
+    #enter-data {
+        float: left;
+        width: 227px;
+        height: 348px;
+        margin-top: 10px;
+        margin-right: 10px;
+        border: 1px solid $primary-color-dark;
+        border-radius: 5px;
+        form {
+            padding: 10px;
+            height: 100%;
+            position: relative;
+            input {
+                display: block;
+                margin: auto;
+                width: 190px;
+                padding: 4px;
+                font-size: 14px;
+            }
+            #button {
+
+                position: absolute;
+                left: 57px;
+                bottom: 30px;
+                width: 136px;
+            }
+            
+        }
+    }
+    #enter-data::after {
+        clear: left;
+    }
+    .mobile-phones {
+        float: left;
+        width: 227px;
+        height: 350px;
+        background-color: $primary-color;
+        margin-top: 10px;
+        margin-right: 10px;;
+        border: 1px solid $primary-color-dark;
+        border-radius: 16px;
+        text-align: center;
+        color: white;
+        font-size: 16px;
+        position: relative;
+        img {
+            max-width: 100px;
+            display: block;
+            margin: 5px auto;
+        }
+        #btn {
+            position: absolute;
+            left: 8px;
+            bottom: 10px;
+            width: 100px;
+            background-color: $secondary-color;
+            color: white;
+            border: 1px solid $primary-color-dark;
+            border-radius: 28px;
+            cursor: pointer;
+            padding: 7px;
+            font-size: 17px;
+            margin: 4px auto;
+            outline-style: none;
+            &:hover {
+                background-color: $primary-color-dark;
+            }
+        }
+        #btn-delete {
+            position: absolute;
+            right: 8px;
+            bottom: 10px;
+            width: 100px;
+            background-color: #f44336;;
+            color: white;
+            border: 1px solid $primary-color-dark;
+            border-radius: 28px;
+            cursor: pointer;
+            padding: 7px;
+            font-size: 17px;
+            margin: 4px auto;
+            outline-style: none;
+            &:hover {
+                background-color: #be0000;
+            }
+        }
+    }
+    .mobile-phones::after {
+        clear: left;
+    }
+
+}

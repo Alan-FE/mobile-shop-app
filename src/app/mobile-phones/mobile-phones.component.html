@@ -1,0 +1,23 @@
+<div id="container">
+    <div id="enter-data">
+        <form (ngSubmit)="addPhone(f)" #f="ngForm">
+            <input type="text" name="name" ngModel placeholder="Enter full name of phone" maxlength="25" required/>
+            <input type="text" name="imgPath" ngModel placeholder="Enter the full phone name" required/>
+            <input type="text" name="camera" ngModel placeholder="Enter the camera specifications" required/>
+            <input type="text" name="color" ngModel placeholder="Enter the color" required/>
+            <input type="text" name="memory" ngModel placeholder="Enter rom and ram memory" required/>
+            <input type="text" name="price" ngModel placeholder="Enter the price" required/>
+            <button type="submit" id="button" [disabled] = "!f.valid">Add new phone</button>
+        </form>
+
+    </div>
+        <div class="mobile-phones" *ngFor='let item of array; let i = index'>
+            <img [src]="item.imgPath" alt="photo">
+            <div>Name: {{ item.name }}</div>
+            <div>Cameras: {{ item.camera }} </div>
+            <div>Memory: {{ item.memory }}</div>
+            <div>Price: {{ item.price }}</div>
+            <button id='btn' (click)="addToCart(i)">Add to cart</button>
+            <button (click)="removeData(i)" id="btn-delete">Delete</button>
+        </div>
+</div>

@@ -1,0 +1,8 @@
+<div id="container">
+    <div class="mobile-phones" *ngFor='let item of cartService.cart; let i = index'>
+        <img [src]="item.imgPath" alt="phone">
+        <div class="data">Name: {{ item.name }}</div>
+        <div class="data">Price: {{ item.price }}</div>
+        <button id='btn' (click)="onDelete(i)">Remove from cart</button>
+    </div>
+</div>
